@@ -1,0 +1,61 @@
+body {
+    background-color: #221F2E !important;
+    color: #D1D1D1 !important;
+}
+
+.form-role-select {
+    width: 20%;
+}
+
+.seller-quick-access .btn {
+    display: block;
+    margin: 0.1rem;
+    width: 100%;
+}
+
+.seller-quick-access {
+    width: 20rem;
+}
+
+#hello {
+    width: 300px;
+    border: 1px solid #ff0066;
+    word-wrap: break-word;
+}
+
+#seller-pinglist-selection {
+    width: 100%;
+}
+   
+.seller-pinglist-radio-select label {
+    border: 0.1em solid #4b48d6;
+    display: block;
+    width: 100%;
+    border-radius: 0.2em;
+    background-color: #2E2B3F;
+    padding: 0.2em;
+    color: white;
+    font-weight: bold;
+    margin: 0.1rem;
+}
+
+/*
+Selects the label following the radio checkbox that
+was checked
+*/
+[name="sell-pinglist-select"]:checked + label {
+    background-color: #2DB8E7;
+}
+/*
+Changes styles for the label following the radio checkbox that has focus
+- click the viewable area and press tab or press a radio button
+- use the arrow keys to change the selected radio button
+*/
+[name="sell-pinglist-select"]:focus + label {
+    border-style: solid;
+}
+
+[name="sell-pinglist-select"] {
+    position: fixed;
+    opacity: 0;
+}

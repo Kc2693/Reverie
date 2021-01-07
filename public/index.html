@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>a b c d</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    </head>
+    <body>
+      <div class="form-group form-role-select">
+        I am a...
+        <select class="form-select" id="role-select">
+          <option>Choose an option</option>
+          <option id="menu-option-seller">Seller</option>
+          <option>Buyer</option>
+        </select>
+      </div>
+      <div class="seller-quick-access btn-group d-invisible" id="collapse">
+          <h3>I want...</h3>
+          <p>all pinglists will include the 'everything' pinglist</p>
+
+          <form id="seller-pinglist-selection" class="seller-pinglist-radio-select">
+            <input id='Everything' type='radio' name='sell-pinglist-select' value='Everything' checked />
+            <label for='Everything'>Only the 'Everything' Pinglist</label>
+            
+            <input id='Flatsales' type='radio' name='sell-pinglist-select' value='Flatsales'/>
+            <label for='Flatsales'>Flatsales Pinglist</label>
+
+            <input id='Auctions' type='radio' name='sell-pinglist-select' value='Auctions'/>
+            <label for='Auctions'>Auctions Pinglist</label>
+
+            <input id='Offers' type='radio' name='sell-pinglist-select' value='Offers'/>
+            <label for='Offers'>Offers Pinglist</label>
+
+            <input id='Interest-checks' type='radio' name='sell-pinglist-select' value='Interest-checks'/>
+            <label for='Interest-checks'>Interest Checks Pinglist</label>
+
+            <input id='Mass-hatches' type='radio' name='sell-pinglist-select' value='Mass-hatches'/>
+            <label for='Mass-hatches'>Mass Hatches Pinglist</label>
+
+            <input id='Contests' type='radio' name='sell-pinglist-select' value='Contests'/>
+            <label for='Contests'>Contests Pinglist</label>
+
+            <input id='Raffles' type='radio' name='sell-pinglist-select' value='Raffles'/>
+            <label for='Raffles'>Raffles Pinglist</label>
+
+            <input id='Grab-bags' type='radio' name='sell-pinglist-select' value='Grab-bags'/>
+            <label for='Grab-bags'>Grab Bags & Other RNG Pinglist</label>
+
+            <button class="btn label-primary" id="generate-pings">Generate</button>
+          </form>
+      </div>
+      <div id="hello"></div>
+      <script src="https://apis.google.com/js/api.js"></script>
+      <script type="module" src="script.js" async defer></script>
+      <script type="module" src="api.js" async defer></script>
+    </body>
+</html>
+
+
+
