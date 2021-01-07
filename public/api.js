@@ -1,7 +1,7 @@
 let fetchedPinglist;
 
 async function makeApiCall() {
-  var API_KEY = 'AIzaSyCVYorGuAgBVtTVuJOXFmKgl4diYt7jefY'; 
+  var API_KEY = ''; 
   const root = 'https://sheets.googleapis.com/v4/spreadsheets/'
   var params = {
     spreadsheetId: '1SliA25dIzo13ZqxqW33HZY8A_FQ6WhS1OBJnu7lCKyc', 
